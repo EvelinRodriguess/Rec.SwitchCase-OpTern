@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+<script>
+    // SWITCH CASE SWITCH CASE SWITCH CASE SWITCH CASE
+    /*
+    Problema: Peça para o usuário informar qual streaming consome, que poderá ser Netflix (NE), Amazon Prime (AP), Spotify (SP), YouTube (YT).
+    De acordo com o streaming informado pelo usuário, apresente a seguinte mensagem:
+    Caso seja Netflix (NE), o programa mostrará a mensagem: "Filmes e Séries".
+    Caso seja Amazon Prime (AP), o programa mostrará a mensagem "Filmes e Séries".
+    Caso seja Spotify (SP), o programa mostrará a mensagem "Músicas".
+    Caso seja YouTube (YT), o programa mostrará a mensagem "Influencers".
+    */
+
+    //Entrada
+
+const streaming = prompt("Informe qual streaming consome: Netflix (NE), Amazon Prime (AP), Spotify (SP), YouTube (YT):").toUpperCase();
+let resposta;
+
+    //Processamento
+
+switch (streaming) {
+    case "NE":
+        resposta = "Filmes e Séries";
+        break;
+
+    case "AP":
+        resposta = "Filmes e Séries";
+        break;
+
+    case "SP":
+        resposta = "Músicas";
+        break;
+        
+    case "YT":
+        resposta = "Influencers";
+        break;    
+}
+
+    //Saída
+    
+document.write(`${resposta}`);
+
+</script>

@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    Problema: Peça para o programa perguntar para o usuário em que curso que está matriculado. Caso o usuário responta Medicina Veterinária (MV), o programa apresentará a mensagem "Curso de 5 anos". Caso o usuário informe Sistemas de Inofrmação (SI), o programa apresentará a mensagem "Curso de 4 anos". Caso informe Agronomia (AG), o programa apresentará a mensagem "Curso de 4 anos e meio",
+    Apresente a mensagem em tela.
+    */
+
+    //Entrada
+
+const cursoMatriculado = prompt("Informe em que curso está matriculado: Medicina Veterinária (MV), Sistemas de Informação (SI), Agronomia (AG)").toUpperCase();
+
+let resposta;
+
+    //Processamento
+
+    switch (cursoMatriculado) {
+        case "MV":
+            resposta = "Curso de 5 anos";
+            break;
+    
+        case "SI":
+            resposta = "Curso de 4 anos";
+            break;
+
+        case "AG":
+            resposta = "Curso de 4 anos e meio";
+            break;    
+    }
+
+    //Saída
+
+document.write(`${resposta}`)
+</script>
